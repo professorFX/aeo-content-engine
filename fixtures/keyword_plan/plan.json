@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "topic": "What answer engine optimization is and how to do it",
+      "primary_keyword": "answer engine optimization",
+      "secondary_keywords": [
+        "what is answer engine optimization",
+        "aeo vs seo",
+        "how to optimize for ai answers"
+      ],
+      "intent": "informational",
+      "content_type": "explainer",
+      "rationale": "Highest priority score in the set and no existing page targets it."
+    },
+    {
+      "topic": "What an agentic website is and why B2B teams need one",
+      "primary_keyword": "agentic website",
+      "secondary_keywords": [
+        "what is an agentic website",
+        "agentic web",
+        "ai agent ready website"
+      ],
+      "intent": "informational",
+      "content_type": "explainer",
+      "rationale": "Low difficulty, close to the product, and the cluster includes a commercial modifier."
+    }
+  ]
+}
