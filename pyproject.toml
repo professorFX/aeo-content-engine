@@ -1,0 +1,12 @@
+[project]
+name = "aeo-content-engine"
+version = "0.1.0"
+description = "Skill-driven LLM pipeline: keyword research to validated, approved, CMS-ready SEO/AEO content"
+requires-python = ">=3.10"
+dependencies = ["pyyaml>=6", "jsonschema>=4", "markdown>=3.5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
