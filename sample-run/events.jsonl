@@ -1,0 +1,14 @@
+{"ts": "2026-11-23T01:36:35+00:00", "run": "20261123-023635-a7bd", "item": "answer-engine-optimization", "stage": "plan", "status": "ok", "keyword": "answer engine optimization"}
+{"ts": "2026-11-23T01:36:35+00:00", "run": "20261123-023635-a7bd", "item": "agentic-website", "stage": "plan", "status": "ok", "keyword": "agentic website"}
+{"ts": "2026-11-23T01:36:35+00:00", "run": "20261123-023635-a7bd", "item": "answer-engine-optimization", "stage": "brief", "status": "ok", "seconds": 0.0}
+{"ts": "2026-11-23T01:36:35+00:00", "run": "20261123-023635-a7bd", "item": "answer-engine-optimization", "stage": "validate", "status": "pass", "attempt": 0, "score": 100, "errors": []}
+{"ts": "2026-11-23T01:36:35+00:00", "run": "20261123-023635-a7bd", "item": "answer-engine-optimization", "stage": "draft", "status": "ok", "seconds": 0.01}
+{"ts": "2026-11-23T01:36:35+00:00", "run": "20261123-023635-a7bd", "item": "answer-engine-optimization", "stage": "review_queue", "status": "ok", "seconds": 0.05}
+{"ts": "2026-11-23T01:36:35+00:00", "run": "20261123-023635-a7bd", "item": "agentic-website", "stage": "brief", "status": "ok", "seconds": 0.0}
+{"ts": "2026-11-23T01:36:35+00:00", "run": "20261123-023635-a7bd", "item": "agentic-website", "stage": "validate", "status": "fail", "attempt": 0, "score": 0, "errors": ["meta_length", "answer_first", "internal_links_valid", "faq_question", "faq_answer_length", "banned_phrase"]}
+{"ts": "2026-11-23T01:36:35+00:00", "run": "20261123-023635-a7bd", "item": "agentic-website", "stage": "validate", "status": "pass", "attempt": 1, "score": 95, "errors": []}
+{"ts": "2026-11-23T01:36:35+00:00", "run": "20261123-023635-a7bd", "item": "agentic-website", "stage": "draft", "status": "ok", "seconds": 0.01}
+{"ts": "2026-11-23T01:36:35+00:00", "run": "20261123-023635-a7bd", "item": "agentic-website", "stage": "review_queue", "status": "ok", "seconds": 0.0}
+{"ts": "2026-11-23T01:36:41+00:00", "run": "20261123-023635-a7bd", "item": "answer-engine-optimization", "stage": "review", "status": "approved", "by": "Editor", "reason": ""}
+{"ts": "2026-11-23T01:36:41+00:00", "run": "20261123-023635-a7bd", "item": "agentic-website", "stage": "review", "status": "rejected", "by": "Editor", "reason": "Hold until Actions launch"}
+{"ts": "2026-11-23T01:36:41+00:00", "run": "20261123-023635-a7bd", "item": "answer-engine-optimization", "stage": "publish", "status": "ok", "seconds": 0.03}
