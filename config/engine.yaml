@@ -1,0 +1,57 @@
+# Engine configuration. Secrets come from environment variables, never this file.
+site:
+  name: Relay                      # demo brand (fictional); replace with the client's
+  base_url: https://www.relay.example
+  author: Relay Editorial Team
+  publisher_logo: https://www.relay.example/logo.png
+  locale: en-US
+
+llm:
+  provider: anthropic              # anthropic | fixtures (offline demo/tests)
+  model: claude-sonnet-5-5
+  api_key_env: ANTHROPIC_API_KEY
+  max_retries: 4                   # HTTP retries on 429/5xx with exponential backoff
+  schema_retries: 1                # re-ask once if output fails its JSON schema
+  timeout_s: 120
+
+keywords:
+  provider: csv                    # csv | dataforseo
+  csv_path: knowledge/seed_keywords.csv
+  dataforseo:
+    login_env: DATAFORSEO_LOGIN
+    password_env: DATAFORSEO_PASSWORD
+    location_code: 2840            # United States
+    language_code: en
+  max_keywords_to_plan: 25
+  articles_per_run: 2
+
+validation:
+  min_score_for_review: 80         # below this, the item goes to auto-repair
+  max_repair_attempts: 1
+  title_chars: [30, 60]
+  meta_chars: [120, 160]
+  slug_max_chars: 60
+  min_h2: 3
+  min_internal_links: 2
+  answer_first_max_words: 60       # AEO: the opening paragraph must answer directly
+  faq_count: [3, 6]
+  faq_answer_words: [25, 70]
+  duplicate_title_ratio: 0.85
+
+publish:
+  target: sanity                   # sanity | contentful | markdown
+  dry_run: true                    # writes payloads to the run folder instead of calling the CMS
+  sanity:
+    project_id_env: SANITY_PROJECT_ID
+    dataset: production
+    token_env: SANITY_TOKEN
+    api_version: v2023-08-01
+    document_type: post
+    as_draft: true                 # create drafts.* so editors publish from Studio
+  contentful:
+    space_env: CONTENTFUL_SPACE_ID
+    environment: master
+    token_env: CONTENTFUL_MANAGEMENT_TOKEN
+    content_type: blogPost
+  markdown:
+    output_dir: content/posts      # Next.js git-based content
