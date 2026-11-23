@@ -1,0 +1,21 @@
+# Existing pages: used for internal linking, duplicate and cannibalisation checks.
+- url: /blog/schema-markup-for-b2b-saas
+  title: Schema Markup for B2B SaaS Sites
+  target_keyword: schema markup for saas
+  topics: [structured data, schema.org, json-ld]
+- url: /blog/how-ai-assistants-choose-sources
+  title: How AI Assistants Choose Which Sources to Cite
+  target_keyword: how ai assistants choose sources
+  topics: [ai search, citations, llm]
+- url: /blog/faq-pages-that-rank
+  title: FAQ Pages That Rank in Search and AI Answers
+  target_keyword: faq page seo
+  topics: [faq, featured snippets, aeo]
+- url: /features/actions
+  title: "Relay Actions: Let AI Agents Book and Buy on Your Site"
+  target_keyword: ai agent actions website
+  topics: [agents, actions, conversion]
+- url: /blog/seo-vs-geo
+  title: "SEO vs GEO: What Changes When AI Writes the Answer"
+  target_keyword: seo vs geo
+  topics: [geo, seo, ai search]

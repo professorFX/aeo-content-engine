@@ -1,0 +1,20 @@
+# Shared marketing knowledge every skill can read. Demo brand: fictional.
+brand: Relay
+product: An agentic website platform that lets B2B companies publish pages AI assistants and buyers can both act on.
+audience: Marketing and growth leads at B2B SaaS companies (50-1,000 employees)
+voice:
+  - Plain, specific, practical. Short sentences.
+  - Explain terms the first time they appear.
+  - Show, don't hype. Every claim needs a reason or an example.
+  - Second person ("you"), active voice.
+avoid_phrases:
+  - guaranteed
+  - "#1"
+  - revolutionary
+  - game-changer
+  - in today's fast-paced world
+product_facts:
+  - Relay publishes structured pages with schema.org markup by default.
+  - Relay pages expose an actions endpoint so AI agents can book demos and request quotes.
+  - Relay integrates with HubSpot and Salesforce.
+cta: See how Relay structures your pages for AI answers. Book a 20-minute walkthrough.
