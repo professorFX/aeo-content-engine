@@ -1,0 +1,28 @@
+{
+  "title": "What Is an Agentic Website? A Guide for B2B Teams",
+  "meta_description": "An agentic website lets AI agents read your pages and complete tasks like booking a demo. Learn what makes a site agentic and how to get B2B-ready.",
+  "slug": "agentic-website",
+  "intro": "An agentic website is built so AI agents can read it and complete tasks on it, such as comparing plans or booking a demo, not just display pages to people. For B2B teams, it means buyers' assistants can act on your site directly.",
+  "body_markdown": "## What makes a website agentic?\n\nMost websites are built for a person with a browser. An agentic website also serves software agents acting for that person. Three things set it apart.\n\nFirst, the content is machine-readable. Pages use structured data and consistent naming, so an agent can tell a price from a feature list without guessing. Second, the site exposes actions: defined ways for an agent to request a quote, check availability or book a meeting, with clear inputs and responses. Third, it has clear permissions. The site states what an agent may do on a user's behalf and what still needs a human.\n\n## Why does it matter for B2B buyers?\n\nB2B buyers increasingly start research by asking an assistant to shortlist vendors, compare pricing models or summarise security documentation. If your site is hard for an agent to read, your product is harder to include in that shortlist. If it is easy to read but offers no way to act, the buyer's next step still means a form, an email and a wait.\n\nAgentic sites shorten that path. An agent that can confirm your integrations, pull the right case study and book a call removes several steps from the buyer's journey. [Relay Actions](/features/actions) is one example of exposing those steps safely.\n\n## How to make your site agent-ready\n\nYou don't need to rebuild your site to start. Work through these layers in order:\n\n1. **Clean up structure.** Use one heading hierarchy, descriptive titles and consistent terms for products and plans.\n2. **Add structured data.** Mark up your organisation, products, articles and FAQs. Our [schema markup guide for B2B SaaS](/blog/schema-markup-for-b2b-saas) covers the types that matter most.\n3. **Write answer-first.** Agents and assistants quote short, direct answers. Put the answer at the top of each page and section. For how assistants pick what to quote, see [how AI assistants choose sources](/blog/how-ai-assistants-choose-sources).\n4. **Expose a few safe actions.** Start with low-risk tasks such as booking a demo or requesting pricing, with rate limits and logging.\n5. **Keep a human in the loop** for anything contractual, financial or irreversible.\n\n## What should you measure?\n\nTrack agent activity separately from human traffic so you can see its value. Useful measures include sessions from known AI agents, the actions they complete, the share of demo requests that arrive through an agent, and the pipeline those requests create. Review failed actions too. They show where your content or action design confuses agents.",
+  "faq": [
+    {
+      "question": "Do agentic websites replace normal websites?",
+      "answer": "No. An agentic website is a normal website with extra layers for software agents: structured content, defined actions and clear permissions. People still browse it as usual. The agent layer simply lets assistants read and act on the same pages without scraping or guessing."
+    },
+    {
+      "question": "Is an agentic website secure?",
+      "answer": "It can be, if actions are designed carefully. Start with low-risk actions, require authentication where data is involved, rate-limit requests and log every call. Keep anything contractual or financial behind a human approval step until you trust how agents use the site."
+    },
+    {
+      "question": "Do I need to rebuild my site to make it agentic?",
+      "answer": "Usually not. Most teams start by fixing structure, adding structured data and rewriting key pages answer-first. Actions can then be added one at a time, beginning with demo booking or pricing requests, without replacing the CMS or the design."
+    }
+  ],
+  "key_takeaways": [
+    "Agentic websites serve AI agents as well as people.",
+    "Machine-readable content, actions and permissions are the three building blocks.",
+    "Start with structure and schema, then add a few low-risk actions.",
+    "Measure agent sessions, completed actions and pipeline."
+  ],
+  "cta": "See how Relay structures your pages for AI answers. Book a 20-minute walkthrough."
+}
