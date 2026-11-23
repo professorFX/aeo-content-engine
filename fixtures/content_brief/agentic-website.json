@@ -1,0 +1,54 @@
+{
+  "working_title": "What Is an Agentic Website? A Guide for B2B Teams",
+  "slug": "agentic-website",
+  "search_intent": "Define an agentic website and judge whether it matters for a B2B site now.",
+  "target_words": 900,
+  "direct_answer": "An agentic website is built so AI agents can read it and complete tasks on it, not just display pages to people.",
+  "outline": [
+    {
+      "h2": "What makes a website agentic?",
+      "points": [
+        "Machine-readable content",
+        "Actions agents can call",
+        "Clear permissions"
+      ]
+    },
+    {
+      "h2": "Why it matters for B2B buyers",
+      "points": [
+        "Research through assistants",
+        "Fewer form fills"
+      ]
+    },
+    {
+      "h2": "How to make your site agent-ready",
+      "points": [
+        "Structured data",
+        "Action endpoints",
+        "Answer-first content"
+      ]
+    },
+    {
+      "h2": "What to measure",
+      "points": [
+        "Agent sessions",
+        "Actions completed",
+        "Pipeline from agents"
+      ]
+    }
+  ],
+  "faq_questions": [
+    "Do agentic websites replace normal websites?",
+    "Is an agentic website secure?",
+    "Do I need to rebuild my site?"
+  ],
+  "internal_links": [
+    "/features/actions",
+    "/blog/schema-markup-for-b2b-saas",
+    "/blog/how-ai-assistants-choose-sources"
+  ],
+  "schema_types": [
+    "Article",
+    "FAQPage"
+  ]
+}

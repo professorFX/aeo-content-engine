@@ -1,0 +1,56 @@
+{
+  "working_title": "Answer Engine Optimization: What It Is and How to Do It",
+  "slug": "answer-engine-optimization",
+  "search_intent": "Understand AEO, how it differs from SEO, and the first concrete steps.",
+  "target_words": 900,
+  "direct_answer": "AEO is the practice of structuring content so AI assistants and search features can lift it as the answer.",
+  "outline": [
+    {
+      "h2": "How is AEO different from SEO?",
+      "points": [
+        "Same foundations",
+        "Different unit: the answer, not the page"
+      ]
+    },
+    {
+      "h2": "What do answer engines look for?",
+      "points": [
+        "Direct answers",
+        "Clear structure",
+        "Trust signals",
+        "Structured data"
+      ]
+    },
+    {
+      "h2": "How to optimize a page for AI answers",
+      "points": [
+        "Answer first",
+        "Question headings",
+        "FAQ with schema",
+        "Internal links"
+      ]
+    },
+    {
+      "h2": "How to measure AEO",
+      "points": [
+        "AI citations",
+        "Featured snippets",
+        "Branded search"
+      ]
+    }
+  ],
+  "faq_questions": [
+    "Is AEO replacing SEO?",
+    "Does schema markup help AI answers?",
+    "How long does AEO take to show results?"
+  ],
+  "internal_links": [
+    "/blog/how-ai-assistants-choose-sources",
+    "/blog/faq-pages-that-rank",
+    "/blog/schema-markup-for-b2b-saas"
+  ],
+  "schema_types": [
+    "Article",
+    "FAQPage"
+  ]
+}
