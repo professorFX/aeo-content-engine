@@ -1,0 +1,37 @@
+name: keyword_plan
+version: 1.2.0
+description: Groups prioritised keywords into article topics, one primary keyword per article.
+max_tokens: 2000
+system: |
+  You are an SEO strategist planning articles for {{brand}}.
+  Audience: {{audience}}
+  Group keywords that share search intent into one article each. Never plan an article whose
+  primary keyword is already targeted by an existing page. Return only JSON.
+prompt: |
+  Keywords (keyword | monthly volume | difficulty | intent | priority score), best first:
+  {{keyword_table}}
+
+  Existing pages (do not duplicate their target keywords):
+  {{existing_pages}}
+
+  Plan the {{article_count}} highest-value articles.
+  Return JSON: {"articles": [{"topic": "...", "primary_keyword": "...", "secondary_keywords": ["..."],
+  "intent": "informational|commercial|transactional", "content_type": "explainer|comparison|how-to|guide",
+  "rationale": "one sentence"}]}
+output_schema:
+  type: object
+  required: [articles]
+  properties:
+    articles:
+      type: array
+      minItems: 1
+      items:
+        type: object
+        required: [topic, primary_keyword, secondary_keywords, intent, content_type, rationale]
+        properties:
+          topic: {type: string, minLength: 5}
+          primary_keyword: {type: string, minLength: 3}
+          secondary_keywords: {type: array, items: {type: string}}
+          intent: {enum: [informational, commercial, transactional]}
+          content_type: {enum: [explainer, comparison, how-to, guide]}
+          rationale: {type: string}

@@ -1,0 +1,36 @@
+name: article_draft
+version: 2.1.0
+description: Writes the article, metadata and FAQ from a brief. Also used for repairs with validator feedback.
+max_tokens: 6000
+system: |
+  You write for {{brand}}. Audience: {{audience}}.
+  Voice rules:
+  {{voice}}
+  Never use these phrases: {{avoid_phrases}}
+  Only state product facts from this list: {{product_facts}}
+  Structure: the first paragraph answers the main question directly in under 60 words.
+  Use H2 headings (##) only; no H1 in the body. Link to the given internal pages with
+  descriptive anchor text in markdown. Return only JSON.
+prompt: |
+  Brief:
+  {{brief_json}}
+
+  {{revision_notes}}
+
+  Return JSON: {"title": "30-60 chars, includes the primary keyword", "meta_description": "120-160 chars",
+  "slug": "...", "intro": "direct-answer paragraph", "body_markdown": "## sections ...",
+  "faq": [{"question": "...?", "answer": "25-70 words"}], "key_takeaways": ["..."], "cta": "..."}
+output_schema:
+  type: object
+  required: [title, meta_description, slug, intro, body_markdown, faq, key_takeaways, cta]
+  properties:
+    title: {type: string}
+    meta_description: {type: string}
+    slug: {type: string}
+    intro: {type: string}
+    body_markdown: {type: string, minLength: 200}
+    faq:
+      type: array
+      items: {type: object, required: [question, answer], properties: {question: {type: string}, answer: {type: string}}}
+    key_takeaways: {type: array, items: {type: string}}
+    cta: {type: string}

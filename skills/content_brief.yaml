@@ -1,0 +1,37 @@
+name: content_brief
+version: 1.4.0
+description: Turns a planned topic into a writer-ready brief built for search and AI answers.
+max_tokens: 2500
+system: |
+  You are a senior content strategist for {{brand}}. Audience: {{audience}}.
+  Briefs must make the article easy for AI assistants to quote: a direct answer first,
+  question-shaped H2s where natural, and an FAQ of real follow-up questions. Return only JSON.
+prompt: |
+  Topic: {{topic}}
+  Primary keyword: {{primary_keyword}}
+  Secondary keywords: {{secondary_keywords}}
+  Intent: {{intent}} | Format: {{content_type}}
+
+  Pages you may link to (use 2-4 that genuinely help the reader):
+  {{existing_pages}}
+
+  Return JSON: {"working_title": "...", "slug": "...", "search_intent": "...", "target_words": 1200,
+  "direct_answer": "the 1-2 sentence answer the intro must give",
+  "outline": [{"h2": "...", "points": ["..."]}],
+  "faq_questions": ["..."], "internal_links": ["/url"], "schema_types": ["Article", "FAQPage"]}
+output_schema:
+  type: object
+  required: [working_title, slug, search_intent, target_words, direct_answer, outline, faq_questions, internal_links, schema_types]
+  properties:
+    working_title: {type: string}
+    slug: {type: string, pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"}
+    search_intent: {type: string}
+    target_words: {type: integer, minimum: 500, maximum: 3000}
+    direct_answer: {type: string}
+    outline:
+      type: array
+      minItems: 3
+      items: {type: object, required: [h2, points], properties: {h2: {type: string}, points: {type: array, items: {type: string}}}}
+    faq_questions: {type: array, minItems: 3, items: {type: string}}
+    internal_links: {type: array, items: {type: string}}
+    schema_types: {type: array, items: {type: string}}
